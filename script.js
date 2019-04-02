@@ -83,8 +83,8 @@ info.onAdd = function (map) {
 
 // Edit info box text and variables (such as props.density2010) to match those in your GeoJSON data
 info.update = function (props) {
-  this._div.innerHTML = '<h4>Aantal inwoners uit MOE-landen</h4>' +  (props ?
-    '<b>' + ' Postcodegebied ' + props.PC4CODE + '</b><br />' + props.density + ' inwoners uit MOE-landen'
+  this._div.innerHTML = '<h4>Aantal per postcodegebied</h4>' +  (props ?
+    '<b>' + ' Postcodegebied ' + props.PC4CODE + '</b><br />' + props.density + ''
     : 'Beweeg met de muis over de kaart');
 };
 info.addTo(map);
